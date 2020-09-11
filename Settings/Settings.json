@@ -1,0 +1,14 @@
+{
+    "Token": "NzI4MDAxNDYzMTY2Njk3NTM0.Xv0CMg.DTG1uMeUnAAd-9h-w2aVL6T3lzE",
+    "Prefix": "s!",
+    "Private_Server": false,
+	"default_prefix":"s!" ,
+	"ownerid": "507730859571281932",
+	"modrolename": "Moderator",
+	"adminrolename": "Admin",
+	"managerrolename": "Manager",
+	"overlordrolename": "Owner",
+	"prefix": "s!",
+	"dblapitoken": "old and deprecated",
+	"logsChannel": "logs"
+}

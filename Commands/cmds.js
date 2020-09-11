@@ -24,6 +24,10 @@ module.exports.run = async (client, message, args, tools) => {
     '8ball user asks a question with more than 2 word to get random reply',
     '\u200b'
 ], true)
+.addField('```snipe```',[
+  'Shows last deleted message',
+  '\u200b'
+], true)
       .setColor("RANDOM")
       .setDescription(`  Click ⏪ or ⏩`);
 

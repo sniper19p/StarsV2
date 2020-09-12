@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args, tools) => {
       .setDescription(`  Click ⏪ or ⏩`);
 
     const page2 = new Discord.MessageEmbed()
-      .setTitle(`Channel commands`)
+      .setTitle(`Channel/Server commands`)
       .setDescription(`  Click ⏪ or ⏩`)
       .addField('```lockdown```', [
         `locks down channel  that command in said in`,
@@ -42,6 +42,10 @@ module.exports.run = async (client, message, args, tools) => {
       ], true)
       .addField('```purge```', [
         `purge messages`,
+        '\u200b'
+      ], true)
+      .addField('```say```', [
+        `Makes the bot say something admin+`,
         '\u200b'
       ], true)
 

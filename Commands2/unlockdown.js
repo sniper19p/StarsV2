@@ -1,4 +1,4 @@
-exports.run = (client, message, args) => {
+exports.run = (client, message, msg) => {
     if (!client.lockit) client.lockit = [];
     if (!message.member.hasPermission("MANAGE_CHANNELS")) return msg.reply("❌**Error:** You don't have the permission to do that!❌");
   
@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
         SEND_MESSAGES: true
       
       }).then(() => {
-        message.channel.send('✅✅✅Lockdown lifted  Have fun enjoy!✅✅✅');
+        message.channel.send('✅Lockdown lifted  Have fun enjoy!✅');
         delete client.lockit[message.channel.id];
       }).catch(error => {
         console.log(error);

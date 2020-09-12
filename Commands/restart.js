@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 const ownerid = 507730859571281932;
 
-exports.run = async (bot, message, msg) => {
+exports.run = async (bot, message, Client) => {
     if (message.author.id == ownerid) {
         if (!message.guild.me.hasPermission("ADMINISTRATOR"))
           return message.channel
@@ -17,7 +17,7 @@ exports.run = async (bot, message, msg) => {
     .then(msg => {
       setTimeout(function() {
         bot.destroy();
-    bot.login(process.env.token);
+    bot.login("NzI4MDAxNDYzMTY2Njk3NTM0.Xv0CMg.DTG1uMeUnAAd-9h-w2aVL6T3lzE");
       }, 10000);
 
       setTimeout(function() {

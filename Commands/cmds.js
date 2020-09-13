@@ -107,6 +107,22 @@ module.exports.run = async (client, message, args, tools) => {
         `shows mod commands`,
         '\u200b'
       ], true)
+      .addField('```trigger```', [
+        `Makes your image triggered s!trigger / s!triggered`,
+        '\u200b'
+      ], true)
+      .addField('```change my mind```', [
+        `makes a change my mind command image s!changemymind (message)`,
+        '\u200b'
+      ], true)
+      .addField('```trash```', [
+        `does trash meme s!trash`,
+        '\u200b'
+      ], true)
+      .addField('```facepalm```', [
+        `does a faceplam with your avatar s!facepalm`,
+        '\u200b'
+      ], true)
       .setDescription(`  Click ⏪ or ⏩`);
     const pages = [page1, page2, page3];
 

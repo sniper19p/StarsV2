@@ -1,5 +1,5 @@
 exports.execute = async (message) => {
-    console.log(`You have been disconnected at ${new Date()}`);
+  console.log(`${bot.user.username} Just Disconnected!`);
   };
   exports.conf = {
     event: "disconnect"

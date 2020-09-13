@@ -1,4 +1,4 @@
-exports.execute = async (message) => {
+exports.execute = bot => {
   console.log(`${bot.user.username} Just Reconnected!`);
   };
   exports.conf = {

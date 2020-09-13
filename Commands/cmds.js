@@ -107,6 +107,12 @@ module.exports.run = async (client, message, args, tools) => {
         `shows mod commands`,
         '\u200b'
       ], true)
+
+      .setDescription(`  Click ⏪ or ⏩`);
+
+      const page4 = new Discord.MessageEmbed()
+      .setTitle(`Avatar commands`)
+      .setColor("RANDOM")
       .addField('```trigger```', [
         `Makes your image triggered s!trigger / s!triggered`,
         '\u200b'
@@ -123,8 +129,16 @@ module.exports.run = async (client, message, args, tools) => {
         `does a faceplam with your avatar s!facepalm`,
         '\u200b'
       ], true)
+      .addField('```avatar```', [
+        `shows users avatar s!avatar`,
+        '\u200b'
+      ], true)
+
+
       .setDescription(`  Click ⏪ or ⏩`);
-    const pages = [page1, page2, page3];
+
+
+    const pages = [page1, page2, page3, page4];
 
     const emojilist = ["⏪", "⏩"];
 

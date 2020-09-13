@@ -193,6 +193,9 @@ bot.on('messageDelete', function(message, channel){
   })
 })
 
+bot.on("reconnecting", () => reqEvent("reconnecting")(bot));
+bot.on("shardDisconnect", () => reqEvent("disconnect")(bot));
+
 require('http').createServer((req, res) => res.end('alive')).listen();
     client.login(Token);
 

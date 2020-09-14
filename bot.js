@@ -16,6 +16,7 @@ bot.events = new Discord.Collection();
 
 
 
+
 const applyText = (canvas, text) => {
 	const ctx = canvas.getContext('2d');
 
@@ -191,7 +192,6 @@ bot.on('messageDelete', function(message, channel){
   image: message.attachments.first() ? message.attachments.first().proxyURL : null
   })
 })
-
 
 
 

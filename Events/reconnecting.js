@@ -1,5 +1,5 @@
-exports.execute = bot => {
-  console.log(`${bot.user.username} Just Reconnected!`);
+exports.execute = async (message) => {
+    console.log(`Reconnecting at ${new Date()}`);
   };
   exports.conf = {
     event: "reconecting"

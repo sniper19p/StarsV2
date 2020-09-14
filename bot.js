@@ -194,5 +194,5 @@ bot.on('messageDelete', function(message, channel){
 })
 
 
-
+client.login(Token);
 bot.login(global.Settings.Token);

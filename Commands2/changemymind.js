@@ -3,6 +3,7 @@ const Discord = require ("discord.js")
 
 
 exports.run  = async(client, message, args) => {
+  message.delete();
 let text = args.join(" ")
 
 if(!args[0]) return message.channel.send(`Need more words`);

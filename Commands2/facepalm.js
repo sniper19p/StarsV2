@@ -19,7 +19,7 @@ exports.run  = async(client, message, args) => {
 
 
 exports.conf = {
-    commands: ["facepalm", "Facepalm"],
+    commands: ["facepalm", "Facepalm","fp","Fp"],
     enabled: true,
     guildOnly: true
   };

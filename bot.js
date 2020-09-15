@@ -7,6 +7,7 @@ const client = new Discord.Client();
 const config = require('./config.json')
   client.config = config;
 bot.events = new Discord.Collection();
+client.db = require("quick.db");
 
 
 

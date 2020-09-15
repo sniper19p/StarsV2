@@ -15,7 +15,7 @@ message.channel.send(changemymind);
 
 
 exports.conf = {
-    commands: ["changemymind", "change"],
+    commands: ["changemymind", "change","cmm"],
     enabled: true,
     guildOnly: true
   };

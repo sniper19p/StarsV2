@@ -24,6 +24,6 @@ exports.conf = {
     guildOnly: true
   };
   exports.help = {
-    name : "clearwarns"
+    name : "trigger"
   }
 

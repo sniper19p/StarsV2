@@ -12,6 +12,10 @@ module.exports.run = async (client, message, args, tools) => {
         `sends a meme in chat.`,
         '\u200b'
     ], true)
+    .addField('```kill```', [
+      `sends kill message s!kill user`,
+      '\u200b'
+  ], true)
     .addField('```joke```', [
       `Sends a joke into chat.`,
       '\u200b'

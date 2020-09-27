@@ -4,20 +4,23 @@ const moment = require("moment");
 const { MessageEmbed } = require("discord.js");
 const { ownerId } = require('../Settings/settings.json');
 
-/**
- * @param {string} guildId
- * @param {string} userId
- * @returns {Promise}
- */
-const getUserMoney = (guildId, userId) =>
-  db.fetch(`money_${guildId}_${userId}`);
+
+
 
 /**
  * @param {string} guildId
  * @param {string} userId
  * @returns {Promise}
  */
-const getUserBank = (guildId, userId) => db.fetch(`bank_${guildId}_${userId}`);
+const getUserMoney = (guildId, userId) =>
+  db.fetch(`coins_${guildId}_${userId}`);
+
+/**
+ * @param {string} guildId
+ * @param {string} userId
+ * @returns {Promise}
+ */
+const getUserBank = (guildId, userId) => db.fetch(`Bank_${guildId}_${userId}`);
 
 /**
  * @param {string} guildId
@@ -25,7 +28,7 @@ const getUserBank = (guildId, userId) => db.fetch(`bank_${guildId}_${userId}`);
  * @param {number} amount
  */
 const addUserMoney = (guildId, userId, amount) =>
-  db.add(`money_${guildId}_${userId}`, amount);
+  db.add(`coins_${guildId}_${userId}`, amount);
 
 /**
  * @param {string} guildId
@@ -33,7 +36,15 @@ const addUserMoney = (guildId, userId, amount) =>
  * @param {number} amount
  */
 const addUserBank = (guildId, userId, amount) =>
-  db.add(`bank_${guildId}_${userId}`, amount);
+  db.add(`Bank_${guildId}_${userId}`, amount);
+
+/**
+ * @param {String} guildId
+ * @param {String} userId
+ * @param {Number} amount
+ */
+const removeUserBank = (guildId, userId, amount) =>
+  db.subtract(`Bank_${guildId}_${userId}`, amount);
 
 /**
  * @param {string} guildId
@@ -41,7 +52,7 @@ const addUserBank = (guildId, userId, amount) =>
  * @param {number} amount
  */
 const removeUserMoney = (guildId, userId, amount) =>
-  db.subtract(`money_${guildId}_${userId}`, amount);
+  db.subtract(`coins_${guildId}_${userId}`, amount);
 
 /**
  * @param {string} guildId
@@ -270,6 +281,7 @@ module.exports = {
   addUserMoney,
   addUserBank,
   removeUserMoney,
+  removeUserBank,
   getUserDaily,
   setUserDaily,
   getUserWork,

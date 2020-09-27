@@ -1,14 +1,14 @@
 {
-    "Token": "NzI4MDAxNDYzMTY2Njk3NTM0.Xv0CMg.7g2laOTXQSSTAlLkk6kpatBFmvI",
-    "Prefix": "s!",
+    "Token": "NjY0ODU4ODA0Mzg2NTI5Mjk0.XhdMAw.gRGz5gKnfCEHAD8KIrhPi4l7XzY",
+    "Prefix": "p!",
     "Private_Server": false,
-	"default_prefix":"s!" ,
+	"default_prefix":"p!" ,
 	"ownerid": "507730859571281932",
 	"modrolename": "Moderator",
 	"adminrolename": "Admin",
 	"managerrolename": "Manager",
 	"overlordrolename": "Owner",
-	"prefix": "s!",
+	"prefix": "p!",
 	"dblapitoken": "old and deprecated",
 	"logsChannel": "logs"
 }

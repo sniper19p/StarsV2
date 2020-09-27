@@ -1,14 +1,13 @@
 const Discord = require("discord.js");
 const bot = global.client;
 const {Token } = require("./Settings/Settings.json");
-const Canvas = require('canvas');
+
 const PREFIX = "p!"
 const client = new Discord.Client();
 const config = require('./config.json')
   client.config = config;
 bot.events = new Discord.Collection();
-client.db = require("quick.db");
-const db = require("quick.db")
+
 
 
 
